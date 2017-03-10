@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">AA2</string>
+    <string name="title_activity_about">About</string>
+    <string name="aboutAuthor">Daniel Flores professional Android developer</string>
+    <string name="resource">http://www.sciencekids.co.nz/pictures/dinosaurs.html</string>
+    <string-array name="dinosaursNames">
+        <item>Achelousaurus</item>
+        <item>Allosaurus</item>
+        <item>Centrosaurus </item>
+        <item>Spinosaurus </item>
+        <item>Utahraptor </item>
+        <item>Rajasaurus </item>
+        <item>Albertosaurus</item>
+        <item> Avaceratops </item>
+        <item> Anchiceratops </item>
+        <item>Nipponosaurus </item>
+    </string-array>
+    <string-array name="dinosaursDescription">
+        <item> Dinosaur from the late Cretaceous Period (around 80 million years ago)
+            that lived in what is now North America. Achelousaurus was a herbivore that
+            reached around 6 metres (20 feet) in length and featured two distinct horns
+            coming from its neck frill. It was named in 1995 by paleontologist Scott Sampson.</item>
+
+        <item> Dinosaur from the late Jurassic Period (around 150 million years ago).
+            First described back in 1877, Allosaurus become one of the first well known dinosaurs.
+            It was a carnivore (meat eater) and weighed around 2.3 tons.</item>
+
+        <item> Stocky dinosaur from the late Cretaceous Period (around 76 million years ago).
+            The name Centrosaurus means pointed \'lizard\' and refers to the small points found
+            along the frill of the dinosaur. Remains of the Centrosaurus have been found in Alberta, Canada.</item>
+
+        <item> Dinosaur from the Cretaceous Period (around 100 million years ago).
+            With huge spines growing from its back and the biggest size of any meat eating (carnivorous) dinosaur,
+            the Spinosaurus must have been one scary looking dinosaur.</item>
+
+        <item> Dinosaur from the early Cretaceous Period (around 124 million years ago).
+            The Utahraptor is a Theropod from a family of dinosaurs called Dromaeosauridae
+            (more commonly known as raptors). The Utahraptor is the largest known member of this family
+            with scientists estimating it could have reached a length of 7 metres (23 feet).
+            Utahraptor fossils were first found in the US state of Utah in 1991.</item>
+
+        <item> Rajasaurus (which interestingly means \'prince\' or \'princely lizard\'),
+            a dinosaur from the late Cretaceous Period (around 70 million years ago).
+            Found in India, it featured a unique head crest and measured around 8 metres (26 feet) in length.</item>
+
+        <item> Dinosaur from the late Cretaceous Period.
+            Albertosaurus was a predator that moved on two legs,
+            living in an area that now makes up western North America.
+            While smaller than other Tyrannosaurids such as the well known Tyrannosaurus rex,
+            Albertosaurus still grew to a length of up to 9 metres (30 feet) and a weight of around 1.4 tons.</item>
+
+        <item> Dinosaur from the late Cretaceous Period. The first fossil remains of Avaceratops were found in 1981 in Montana,
+            USA. Like other Ceratopsian dinosaurs, Avaceratops was a herbivore (plant eater).</item>
+
+        <item> Dinosaur from the late Cretaceous Period (around 70 million years ago).
+            Anchiceratops was a herbivore (plant eater) that walked on four legs and featured three horns on its face (much like other Ceratopsids).
+            Named in 1914, Anchiceratops reached up to 6 metres (20 feet) in length and lived in what is now western North America.</item>
+
+        <item> Nipponosaurus (meaning \'Japanese lizard\'), a dinosaur from the late Cretaceous Period.
+            Fossils of the Nipponsaurus were first found in Japan in 1934.</item>
+
+    </string-array>
+</resources>
