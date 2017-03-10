@@ -41,14 +41,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-//**************  Handling Action Bar Events *********  //
+//**************  Handling Action Bar Events ************  //
 
     public boolean onCreateOptionsMenu(Menu menu) {
         super.onCreateOptionsMenu(menu);
         getMenuInflater().inflate(R.menu.actionmenu, menu);
 
 
-        return true;
+        return super.onCreateOptionsMenu(menu);
     }
 
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -68,6 +68,11 @@ public class MainActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
+
+
+// ***************************************************  //
+// ***************************************************  //
+
 
     public class dinoAdapter extends BaseAdapter {
         private Context context;
@@ -102,6 +107,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         public View getView(final int position, View convertView, ViewGroup parent) {
+
             ViewHolder vh = new ViewHolder();
             View row = convertView;
 
@@ -115,15 +121,18 @@ public class MainActivity extends AppCompatActivity {
                 row.setTag(vh);
             } else {
                 vh = (ViewHolder) convertView.getTag();
+                vh.desc.setText(dinoList[position]);
+                vh.img.setImageResource(dinoIds[position]);
             }
             row.setOnClickListener(new View.OnClickListener() {
 
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(context,Description.class);
-                    intent.putExtra("dinos_img", dinoList);
-                    intent.putExtra("dinos_ids", dinoIds);
 
+                    Intent intent = new Intent(context,Description.class);
+                    intent.putExtra("dinos_img", dinoList[position]);
+                    intent.putExtra("dinos_ids", dinoIds[position]);
+                    context.startActivity(intent);
 
                 }
             });

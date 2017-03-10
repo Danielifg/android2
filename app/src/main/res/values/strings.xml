@@ -1,8 +1,10 @@
 <resources>
-    <string name="app_name">AA2</string>
+    
+    <string name="app_name">Saurus Archive</string>
     <string name="title_activity_about">About</string>
     <string name="aboutAuthor">Daniel Flores professional Android developer</string>
     <string name="resource">http://www.sciencekids.co.nz/pictures/dinosaurs.html</string>
+
     <string-array name="dinosaursNames">
         <item>Achelousaurus</item>
         <item>Allosaurus</item>
@@ -15,6 +17,7 @@
         <item> Anchiceratops </item>
         <item>Nipponosaurus </item>
     </string-array>
+
     <string-array name="dinosaursDescription">
         <item> Dinosaur from the late Cretaceous Period (around 80 million years ago)
             that lived in what is now North America. Achelousaurus was a herbivore that
