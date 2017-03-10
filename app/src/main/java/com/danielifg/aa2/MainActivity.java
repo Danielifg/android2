@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,7 +30,13 @@ public class MainActivity extends AppCompatActivity {
         prefs = getPreferences(MODE_PRIVATE);
 
         String[] descriptions = getResources().getStringArray(R.array.dinosaursNames);
-        int [] dinos = {R.drawable.  };
+        int[] dinos = {R.drawable.achelousaurus_1, R.drawable.allosaurus_2, R.drawable.centrosaurus_3,
+                R.drawable.spinosaurus_4, R.drawable.utahraptor_5, R.drawable.rajasaurus_6,
+                R.drawable.albertosaurus_7, R.drawable.avaceratops_8, R.drawable.anchiceratops_9,
+                R.drawable.nipponosaurus_10};
+
+        ListView listView = (ListView) findViewById(R.id.list);
+        listView.setAdapter(new dinoAdapter(this, descriptions, dinos));
 
     }
 
@@ -104,17 +111,19 @@ public class MainActivity extends AppCompatActivity {
                 vh.desc = (TextView) row.findViewById(R.id.itemTV);
                 vh.img = (ImageView) row.findViewById(R.id.itemIV);
                 vh.desc.setText(dinoList[position]);
+                vh.img.setImageResource(dinoIds[position]);
                 row.setTag(vh);
             } else {
                 vh = (ViewHolder) convertView.getTag();
             }
-            row.setOnClickListener(  new View.OnClickListener() {
+            row.setOnClickListener(new View.OnClickListener() {
 
                 @Override
                 public void onClick(View v) {
-                   Intent intent =  new Intent();
-                    SharedPreferences.Editor editor = prefs.edit();
-                 //   editor.putInt("")
+                    Intent intent = new Intent(context,Description.class);
+                    intent.putExtra("dinos_img", dinoList);
+                    intent.putExtra("dinos_ids", dinoIds);
+
 
                 }
             });

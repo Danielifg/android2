@@ -5,8 +5,9 @@
     <item
         android:id="@+id/www"
         android:title="Web"
-        android:showAsAction="ifRoom"/>
+      />
     <item
         android:id="@+id/about"
         android:title="About" />
 </menu>
+
