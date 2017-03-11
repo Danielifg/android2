@@ -1,23 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--This View will implement the dinoAdapter -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:id="@+id/mainLayout" >
-
+    android:id="@+id/mainLayout"
+    android:background="@color/white"
+    android:fadeScrollbars="false"
+    android:scrollbarSize="@dimen/activity_horizontal_margin"
+    android:verticalScrollbarPosition="left"
+    >
     <ImageView android:id="@+id/itemIV"
         android:layout_gravity="center"
-        android:layout_height="30dp"
-        android:layout_width="30dp"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
         />
+
     <TextView
-        android:layout_toRightOf="@id/itemIV"
-        android:textSize="20sp"
-        android:paddingLeft="10dp"
         android:id="@+id/itemTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        />
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/itemIV"
+        android:fontFamily="monospace"
+        android:paddingLeft="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

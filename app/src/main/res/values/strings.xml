@@ -1,6 +1,6 @@
 <resources>
     
-    <string name="app_name">Saurus Archive</string>
+    <string name="app_name">DinoKids</string>
     <string name="title_activity_about">About</string>
     <string name="aboutAuthor">Daniel Flores professional Android developer</string>
     <string name="resource">http://www.sciencekids.co.nz/pictures/dinosaurs.html</string>
